@@ -7,5 +7,5 @@ app.get("/home",(req,res)=>{
 
 app.listen(3000,()=>{
     console.log('Starting Server ....🚀')
-    console.log('Server started running on port 3000 🏃‍♂️')")
+    console.log('Server started running on port 3000 🏃‍♂️')
 })
