@@ -1,8 +1,8 @@
-OpsDen Forum - README
+### OpsDen Forum - README
 
 Welcome to the OpsDen Forum! This platform is designed to facilitate insightful discussions, knowledge sharing, and networking opportunities within the vast realm of technology. Whether you're a seasoned professional, an aspiring technologist, or simply tech-curious, this forum is the place for you to engage with like-minded individuals, exchange ideas, and stay updated on the latest trends and innovations in the tech industry.
 
-### Getting Started
+## Getting Started
 
 To get started, please follow these steps:
 
@@ -20,7 +20,7 @@ Connect with Members: Take advantage of the networking opportunities available o
 
 Stay Informed: Keep up to date with the latest news, events, and developments in the tech industry by following relevant threads and announcements on the forum.
 
-### Guidelines
+## Guidelines
 
 To ensure a welcoming and inclusive environment for all members, please adhere to the following guidelines:
 
@@ -40,7 +40,7 @@ Moderation: Follow the instructions of forum moderators and administrators. Repo
 
 By participating in the OpsDen Forum, you agree to abide by these guidelines and contribute to creating a vibrant and inclusive community for all members.
 
-### Feedback
+## Feedback
 
 We value your feedback and suggestions for improving the forum. If you have any ideas for new features, categories, or improvements to existing functionalities, please don't hesitate to reach out to the forum administrators.
 
