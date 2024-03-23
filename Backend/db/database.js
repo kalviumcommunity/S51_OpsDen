@@ -11,6 +11,6 @@ const startDatabase = async ()=>{
     }
 }
 const isConnected = async()=>{
-    return (mongoose.connection.readystate === 1);
+    return (mongoose.connection.readyState === 1);
 }
 module.exports = {startDatabase,isConnected}
