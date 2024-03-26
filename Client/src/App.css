@@ -1,8 +1,85 @@
-body{
-    background-color: #0E142A;
+body {
+    background-color: #0e142a65;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
 #color{
-    background-color: #0E142A;
+    background-color: #0e142a54;
     height: 10vh;
 }
+
+.div{
+    border: 0.5vh solid #0e142a23;
+    height: 60vh;
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+    text-align: center;
+}
+.welcome{
+    font-size: 2vw;
+    color: rgb(247, 245, 245);
+}
+.logo{
+    height: 35vh;
+    width: 35vw;
+    /* margin-left:10vw; */
+}
+.login{
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    border-radius: 2vh;
+    height: 6vh;
+    width: 8vw;
+}
+
+.copy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.App video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    position: relative; /* Ensure content overlays the video */
+    z-index: 1; /* Ensure content appears above the video */
+    /* Add additional styling for your content */
+  }
+  
+  /* Add styling for other elements as needed */
+  
