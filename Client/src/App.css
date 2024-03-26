@@ -6,11 +6,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
 #color{
     background-color: #0e142a54;
     height: 10vh;
 }
+
 
 .div{
     border: 0.5vh solid #0e142a23;
@@ -80,6 +87,4 @@ body {
     z-index: 1; /* Ensure content appears above the video */
     /* Add additional styling for your content */
   }
-  
-  /* Add styling for other elements as needed */
-  
+
