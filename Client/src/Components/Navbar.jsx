@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import logo from '../assets/Logo-2.png';
 import logo2 from '../assets/MobileLogo.png';
 import profile from '../assets/profile_pic.png';
