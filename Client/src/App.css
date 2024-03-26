@@ -16,6 +16,23 @@ body {
 #color{
     background-color: #0e142a54;
     height: 10vh;
+} 
+#Article{
+    color: aliceblue;
+    margin-left: 39%;
+}
+.arc{
+    border:1px solid #fff;
+    margin-top: 3%;
+    margin-right: 21%;
+    text-align: center;
+    border-radius: 22px;
+}
+#newsimg{
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    height: 31vh;
+    width: 100vw;
 }
 
 
@@ -87,4 +104,5 @@ body {
     z-index: 1; /* Ensure content appears above the video */
     /* Add additional styling for your content */
   }
+
 
