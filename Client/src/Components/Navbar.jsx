@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from '../assets/Logo-2.png';
 import profile from '../assets/profile_pic.png';
 import '../App.css'
