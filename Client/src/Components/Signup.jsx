@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Login.css'; 
-import { auth } from './firebase/Fire.config';
+import { auth } from '././../firebase/Fire.config';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword} from 'firebase/auth';
 import { GoogleAuthProvider, signInWithPopup, FacebookAuthProvider, OAuthProvider, TwitterAuthProvider } from 'firebase/auth';
 import {FaTwitter, FaGoogle, FaMicrosoft,FaFacebook } from 'react-icons/fa';
