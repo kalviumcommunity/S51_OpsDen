@@ -2,7 +2,7 @@ import './App.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Components/Main'
 import TitlePage from './Components/Home'
-import SignInSignUpForm from './Components/Signup'
+
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
         <Routes>
           <Route path='/' element={<TitlePage/>}></Route>
           <Route path='/frontPage' element={<Home/>}></Route>
-          <SignInSignUpForm></SignInSignUpForm> 
         </Routes>
       </BrowserRouter>
     </>
