@@ -1,19 +1,17 @@
 import './App.css'
-<<<<<<< HEAD
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-=======
-import Main from './Components/Main'
->>>>>>> 5b7db07f448ad8fc1ba20a104aacdfe21fbebbc8
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from './Components/Main'
+import TitlePage from './Components/Home'
 
 function App() {
   return (
     <>
-<<<<<<< HEAD
-    
-=======
-      <Main/>
->>>>>>> 5b7db07f448ad8fc1ba20a104aacdfe21fbebbc8
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<TitlePage/>}></Route>
+          <Route path='/frontPage' element={<Home/>}></Route> 
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

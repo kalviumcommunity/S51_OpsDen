@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     background-color: rgb(16, 16, 44);
     margin: 0;
@@ -69,39 +68,6 @@ body {
     padding: 10px 0;
 }
 
-/* .App video{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  .video-background video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-   */
-  .content {
-    position: relative; /* Ensure content overlays the video */
-    z-index: 1; /* Ensure content appears above the video */
-    /* Add additional styling for your content */
-  }
-  
-  /* Add styling for other elements as needed */
-  
-=======
 *{
     margin: 0px;
     padding: 0px;
@@ -133,4 +99,8 @@ body{
     height: 31vh;
     width: 100vw;
 }
->>>>>>> 5b7db07f448ad8fc1ba20a104aacdfe21fbebbc8
+
+
+
+
+
