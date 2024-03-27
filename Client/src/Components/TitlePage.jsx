@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from "../assets/Logo-2.png";
-import Video from "../video/video-2160p.mp4";
+import Logo from "../assets/logo-removedbg.png";
+import Video from "../video/video.mp4";
 import { Link } from 'react-router-dom';
 import '../App.css'
 
@@ -8,9 +8,9 @@ function TitlePage() {
   return (
     <div className='container'>
       <div className="video-background">
-        {/* <video autoPlay loop muted>
+        <video autoPlay loop muted>
           <source src={Video} type="video/mp4" />
-        </video> */}
+        </video>
       </div>
       <div className='content'>
         <img className="logo" src={Logo} alt="logo" />
