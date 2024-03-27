@@ -3,13 +3,13 @@ import Logo from "../assets/Logo-2.png";
 import Video from "../video/video-2160p.mp4";
 import '../App.css'
 
-function Home() {
+function TitlePage() {
   return (
     <div className='container'>
       <div className="video-background">
-        <video autoPlay loop muted>
+        {/* <video autoPlay loop muted>
           <source src={Video} type="video/mp4" />
-        </video>
+        </video> */}
       </div>
       <div className='content'>
         <img className="logo" src={Logo} alt="logo" />
@@ -21,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default TitlePage;
