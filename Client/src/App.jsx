@@ -1,7 +1,8 @@
 import './App.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Components/Main'
-import TitlePage from './Components/Home'
+import TitlePage from './Components/TitlePage'
+import SignInSignUpForm from './Components/Signup'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<TitlePage/>}></Route>
           <Route path='/frontPage' element={<Home/>}></Route>
+          <Route path='/signup' element={<SignInSignUpForm/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -47,15 +47,14 @@ body {
 
 @media (max-width: 768px) {
     .login {
-        width: 80%; /* Adjust width for smaller screens */
-        margin: 10px auto; /* Center the button */
+        width: 80%; 
+        margin: 10px auto; 
     }
 }
 
-/* Hover effect */
 .login:hover {
-    background-color: darkgreen; /* Change background color on hover */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: darkgreen; 
+    cursor: pointer; 
 }
 .copy {
     position: fixed;
@@ -99,8 +98,3 @@ body{
     height: 31vh;
     width: 100vw;
 }
-
-
-
-
-
