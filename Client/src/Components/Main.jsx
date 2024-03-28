@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+import Sidebar from './Sidebar';
 
 function Main() {
   const [data, setData] = useState({ articles: [] }); 
@@ -35,6 +36,7 @@ function Main() {
   return (
     <>
       <Navbar />
+      <Sidebar/>
       <div id='Article'>
         {data.articles.length > 0 ? ( 
           data.articles.map((item, index) => (

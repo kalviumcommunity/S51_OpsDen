@@ -2,6 +2,7 @@ import logo from '../assets/Logo-2.png';
 import logo2 from '../assets/MobileLogo.png';
 import profile from '../assets/profile_pic.png';
 import { useEffect, useState } from 'react';
+import './Navbar.css'
 
 export default function Navbar() {
   const [showOptions, setShowOptions] = useState(false);
