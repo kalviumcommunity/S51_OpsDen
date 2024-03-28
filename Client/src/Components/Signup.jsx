@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Login.css'; 
-import { auth } from '././../firebase/Fire.config';
+import { auth } from '../firebase/Fire.config';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword} from 'firebase/auth';
 import { GoogleAuthProvider, signInWithPopup,OAuthProvider, TwitterAuthProvider } from 'firebase/auth';
 import {FaTwitter, FaGoogle, FaMicrosoft } from 'react-icons/fa';
@@ -70,15 +70,6 @@ const SignInSignUpForm = () => {
     }
   }
 
-  const facebook = async (e) => {
-    const provider = new FacebookAuthProvider();
-    try {
-      await signInWithPopup(auth, provider);
-      alert("Logged in with Facebook successfully!");
-    } catch (error) {
-      console.error(error.message);
-    }
-  }
 
   const twitter = async (e) => {
     const provider = new TwitterAuthProvider();

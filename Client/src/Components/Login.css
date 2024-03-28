@@ -1,4 +1,4 @@
-/* 
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
@@ -153,12 +153,12 @@ form.sign-in-form {
 
 .btn {
   width: 150px;
-  background-color: #5995fd;
+  background-color: #005eff;
   border: none;
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #fff;
+  color: #000000;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -168,6 +168,7 @@ form.sign-in-form {
 
 .btn:hover {
   background-color: #4d84e2;
+  color: #fff;
 }
 .panels-container {
   position: absolute;
@@ -417,4 +418,4 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
-} */
+}
