@@ -1,7 +1,6 @@
-import './App.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from './Components/Main'
-import TitlePage from './Components/TitlePage'
+import Main from './Components/Main'
+import Home from './Components/Home'
 import SignInSignUpForm from './Components/Signup'
 
 
@@ -10,8 +9,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<TitlePage/>}></Route>
-          <Route path='/frontPage' element={<Home/>}></Route>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/frontPage' element={<Main/>}></Route>
           <Route path='/signup' element={<SignInSignUpForm/>}></Route>
         </Routes>
       </BrowserRouter>

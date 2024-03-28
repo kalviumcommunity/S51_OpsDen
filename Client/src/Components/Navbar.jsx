@@ -1,7 +1,7 @@
 import logo from '../assets/Logo-2.png';
 import logo2 from '../assets/MobileLogo.png';
 import profile from '../assets/profile_pic.png';
-import '../App.css';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [showOptions, setShowOptions] = useState(false);
