@@ -5,6 +5,7 @@ import SignInSignUpForm from './Components/Signup'
 import './App.css'
 import Guide from './Components/Guide'
 import Post from './Components/Post'
+import Feedback from './Components/Feedback'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/signup' element={<SignInSignUpForm/>}></Route>
           <Route path='/guide' element={<Guide/>}></Route>
           <Route path='/post' element={<Post/>}></Route>
+          <Route path='/feedback' element={<Feedback/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

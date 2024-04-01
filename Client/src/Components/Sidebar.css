@@ -6,7 +6,6 @@
     width: 20vw; 
     background-color: #808fd1be;
     color: white; 
-    padding: 2vh; 
     z-index: 1; 
     overflow-y: auto; 
     text-align: center;
@@ -14,11 +13,9 @@
   
   .menu {
     list-style-type: none;
-    padding: 0; 
   }
   
   .menu li {
-    margin-bottom: 1vh; 
     cursor: pointer; 
   }
   

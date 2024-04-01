@@ -10,15 +10,10 @@ export default function Sidebar() {
         <li>Home</li>
         <li>Popular</li>
         <br />
-        <hr />
-        <br />
-        <li>Categories</li>
-        <br />
-        <hr />
-        <br />
+      </ul>
+      <ul className="menu">
         <Link to='/guide'><li>Guidelines</li></Link>
-        <li>About Us</li>
-        <li>Feedback</li>
+        <Link to='/feedback'><li>Feedback</li></Link>
       </ul>
     </div>
   );
