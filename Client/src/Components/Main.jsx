@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+<<<<<<< HEAD
 import './Home.css'
 import Logo from "../assets/logo-removedbg.png";
 import Video from "../video/video.mp4";
 import { Link } from 'react-router-dom';
 import '../App.css'
+=======
+import Sidebar from './Sidebar';
+
+>>>>>>> 1bbf779f76280ff191a83213c852327a03b0a4f8
 function Main() {
   function getCookie(name) {
     let cookieArray = document.cookie.split('; ');
@@ -46,6 +51,7 @@ function Main() {
   return (
     <>
       <Navbar />
+      <Sidebar/>
       <div id='Article'>
         {data.articles.length > 0 ? ( 
           data.articles.map((item,index)=>{
