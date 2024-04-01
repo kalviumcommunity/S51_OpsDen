@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
 import Logo from "../assets/logo-removedbg.png";
-import Video from "../video/video.mp4";
 import { Link } from 'react-router-dom';
 import '../App.css'
+import './Main.css'
 import Sidebar from './Sidebar';
+import Video from '../assets/grid_-_82515 (1440p).mp4'
 function Main() {
   function getCookie(name) {
     let cookieArray = document.cookie.split('; ');
@@ -66,11 +67,11 @@ function Main() {
         </video>
       </div>
       <div id='content'>
-        <img className="logo" src={Logo} alt="logo" />
+        <img id="logo" src={Logo} alt="logo" />
         <p className='welcome'>Welcome to OpsDen</p>
         <Link to="/signup"><button className='login'>Login</button></Link>
       </div>
-      <footer className='copy'>&copy; Copyright of OpsDen from 2024 - 2082</footer>
+      <footer>&copy; Copyright of OpsDen from 2024 - 2082</footer>
     </div>
   );}
 }

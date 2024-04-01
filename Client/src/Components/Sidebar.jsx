@@ -1,4 +1,3 @@
-import React from 'react';
 import './Sidebar.css';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ export default function Sidebar() {
       <ul className="menu">
         <br />
         <li>Home</li>
-        <li>Popular</li>
+        <li>Popular News</li>
         <br />
         <hr />
         <br />

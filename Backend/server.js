@@ -2,11 +2,15 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const { startDatabase, isConnected } = require('./db/database');
+const {getRouter, postRouter, deleteRouter, putRouter} = require('./routes/opsden.route')
 const app = express()
 app.use(bodyParser.json());
 app.use(cors())
 app.use(express.json())
-
+app.use(getRouter)
+app.use(postRouter)
+app.use(deleteRouter)
+app.use(putRouter)
 
 app.get('/', (req, res) => {
   res.send({message:'Welcome to the amazing world of Tech'})
