@@ -4,6 +4,7 @@ import { auth } from '../firebase/Fire.config';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword} from 'firebase/auth';
 import { GoogleAuthProvider, signInWithPopup,OAuthProvider, TwitterAuthProvider } from 'firebase/auth';
 import {FaTwitter, FaGoogle, FaMicrosoft } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -11,10 +12,16 @@ const SignInSignUpForm = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate()
   const toggleForm = () => {
     setIsSignIn(!isSignIn);
   };
+
+  function setCookie(name, value, daysToExpire) {
+    let date = new Date();
+    date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+    document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+  }
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -22,7 +29,7 @@ const SignInSignUpForm = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        alert("Logged in successfully!");
+        navigate('/'); setCookie('logedin','True',365)
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -44,7 +51,7 @@ const SignInSignUpForm = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        alert("Signed up successfully!");
+        navigate('/'); setCookie('logedin','True',365)
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -64,7 +71,7 @@ const SignInSignUpForm = () => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      alert("Logged in with Google successfully!");
+      navigate('/'); setCookie('logedin','True',365)
     } catch (error) {
       console.error(error.message);
     }
@@ -75,7 +82,7 @@ const SignInSignUpForm = () => {
     const provider = new TwitterAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      alert("Logged in with Twitter successfully!");
+      navigate('/'); setCookie('logedin','True',365)
     } catch (error) {
       console.error(error.message);
     }
@@ -87,9 +94,9 @@ const SignInSignUpForm = () => {
       const result = await signInWithPopup(auth, provider);
       const isNewUser = result.additionalUserInfo?.isNewUser;
       if (isNewUser) {
-        alert("Logged in with Microsoft successfully as a new user!");
+        navigate('/'); setCookie('logedin','True',365)
       } else {
-        alert("Logged in with Microsoft successfully!");
+        navigate('/'); setCookie('logedin','True',365)
       }
     } catch (error) {
       console.error(error.message);
