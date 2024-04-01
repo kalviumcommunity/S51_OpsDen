@@ -1,0 +1,47 @@
+.post-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .heading {
+    margin-bottom: 2vh;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .input {
+    margin-bottom: 1vh;
+  }
+  
+  .input label {
+    display: block;
+    margin-bottom: 3vh;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  #text {
+    height: 15vh;
+    width: 30vw;
+  }
+  
+  .button {
+    padding: 1vh;
+    font-size: 1em;
+    color: black;
+    background-color: #007bff;
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  
