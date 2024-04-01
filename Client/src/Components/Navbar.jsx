@@ -7,7 +7,11 @@ import './Navbar.css'
 export default function Navbar() {
   const [showOptions, setShowOptions] = useState(false);
   const [displayOptions, setDisplayOptions] = useState(false);
-
+  function setCookie(name, value, daysToExpire) {
+    let date = new Date();
+    date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+    document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+  }
   const toggleOptions = () => {
     setShowOptions(!showOptions);
   };
@@ -58,7 +62,7 @@ export default function Navbar() {
           <div className='relative'>
           <p className='text-xs text-white'>Welcome Username</p>
             <div className={`absolute top-7 left-52 bg-white p-2 rounded-lg shadow-md ${displayOptions ? 'block' : 'hidden'}`}>
-              <p className='text-xs text-gray-800 sm:block'>Logout</p>
+              <button onClick={()=>{setCookie('logedin','False',365);window.location.reload();}}className='text-xs text-gray-800 sm:block'>Logout</button>
             </div>
           </div>
         </>

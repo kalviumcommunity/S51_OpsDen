@@ -1,22 +1,18 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
-<<<<<<< HEAD
-import './Home.css'
 import Logo from "../assets/logo-removedbg.png";
 import Video from "../video/video.mp4";
 import { Link } from 'react-router-dom';
 import '../App.css'
-=======
 import Sidebar from './Sidebar';
-
->>>>>>> 1bbf779f76280ff191a83213c852327a03b0a4f8
 function Main() {
   function getCookie(name) {
     let cookieArray = document.cookie.split('; ');
     let cookie = cookieArray.find((row) => row.startsWith(name + '='));
     return cookie ? cookie.split('=')[1] : null;
   }
+  console.log(getCookie('logedin'))
    
   const [data, setData] = useState({ articles: [] }); 
   const [state, setState] = useState({
@@ -47,7 +43,7 @@ function Main() {
   if (state.loading) {
     return <div>Loading...</div>;
   }
-  if(getCookie('logedin')){
+  if(getCookie('logedin')=="True"){
   return (
     <>
       <Navbar />
