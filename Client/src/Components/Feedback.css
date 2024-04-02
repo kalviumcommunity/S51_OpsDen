@@ -1,19 +1,22 @@
 .feedback-container {
-    max-width: 400px;
+
+    max-width: 39vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 31px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: #f9f9f9;
   }
   
   .feedback-heading {
-    font-size: 24px;
-    margin-bottom: 20px;
+
+    font-size: 25px;
+    margin-bottom: 19px;
+    text-align: center;
   }
   
   .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
   
   label {
@@ -21,11 +24,10 @@
     font-weight: bold;
     margin-bottom: 5px;
   }
-  
-  input[type='text'],
-  input[type='email'],
+
+  #iemail,#iname,
   textarea {
-    width: 100%;
+    width: 31vw;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
