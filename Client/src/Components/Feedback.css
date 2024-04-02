@@ -1,0 +1,50 @@
+.feedback-container {
+    max-width: 39vw;
+    margin: 0 auto;
+    padding: 31px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+  }
+  
+  .feedback-heading {
+    font-size: 25px;
+    margin-bottom: 19px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 19px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #iemail,#iname,
+  textarea {
+    width: 31vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .button {
+    padding: 1vh;
+    background-color: #007bff;
+    color: black;
+    border: 1px solid  black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,24 +1,22 @@
 .sidebar {
     position: fixed; 
-    top:10vh;
+    top:16vh;
     left: 0; 
     height: 100%; 
     width: 20vw; 
-    background-color: #808fd1be;
     color: white; 
-    padding: 2vh; 
     z-index: 1; 
     overflow-y: auto; 
     text-align: center;
+    background-color: #11036a00;
+    box-shadow: 0 10px 57px -3px rgb(15, 70, 222), 0 4px 6px -2px rgba(29, 78, 216, 0.05);
   }
   
   .menu {
     list-style-type: none;
-    padding: 0; 
   }
   
   .menu li {
-    margin-bottom: 1vh; 
     cursor: pointer; 
   }
   

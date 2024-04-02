@@ -28,8 +28,11 @@ const SignInSignUpForm = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
+        console.log(user.providerData[0].email
+          );
         navigate('/'); setCookie('logedin','True',365)
+        setCookie("user",user.providerData[0].email
+        ,365);
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -52,6 +55,7 @@ const SignInSignUpForm = () => {
         const user = userCredential.user;
         console.log(user);
         navigate('/'); setCookie('logedin','True',365)
+        setCookie("user",user.providerData[0].email,365);
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -70,8 +74,10 @@ const SignInSignUpForm = () => {
   const google = async (e) => {
     const provider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
+      const result = await signInWithPopup(auth, provider);
+      console.log(result);
       navigate('/'); setCookie('logedin','True',365)
+      setCookie("user",result.user.displayName,365);
     } catch (error) {
       console.error(error.message);
     }
@@ -81,8 +87,9 @@ const SignInSignUpForm = () => {
   const twitter = async (e) => {
     const provider = new TwitterAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
+      const result = await signInWithPopup(auth, provider);
       navigate('/'); setCookie('logedin','True',365)
+      setCookie("user",result.user.displayName,365);
     } catch (error) {
       console.error(error.message);
     }
@@ -95,8 +102,10 @@ const SignInSignUpForm = () => {
       const isNewUser = result.additionalUserInfo?.isNewUser;
       if (isNewUser) {
         navigate('/'); setCookie('logedin','True',365)
+        setCookie("user",result.user.displayName,365);
       } else {
         navigate('/'); setCookie('logedin','True',365)
+        setCookie("user",result.user.displayName,365)
       }
     } catch (error) {
       console.error(error.message);
@@ -112,7 +121,7 @@ const SignInSignUpForm = () => {
             <h2 className="title">{isSignIn ? "Sign in" : "Sign up"}</h2>
             <div className="input-field">
               <i className="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input type="email" id="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div className="input-field">
               <i className="fas fa-lock"></i>

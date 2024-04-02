@@ -5,7 +5,7 @@ const putRouter = express.Router();
 const deleteRouter = express.Router();
 const opsdens = require("../models/opsden.model")
 const Joi = require('joi');
-const feedback = require('../models/feedback.model')
+const Feedback = require('../models/feedback.model')
 const feedbackRouter = express.Router(); 
 
 const schema = Joi.object({
@@ -110,14 +110,15 @@ deleteRouter.delete('/api/deleteopsden/:id',async (req, res) => {
 })
 feedbackRouter.post('/api/feedback',async (req, res) => {
     try{
-        const feedback = await feedback.create(req.body);
-        res.status(201).json(feedback);
+        let{id,name,email,feedback} = req.body;
+        const feedbacks = await Feedback.create({id,name,email,feedback});
+        res.status(201).json(feedbacks);
     }catch(err){
         console.log(err);
         return res.status(500).send({
-            message: "Internal server error"
+            message: `Internal server error , ${err}`
         })
     }
 })
 
-module.exports = {getRouter, postRouter, deleteRouter, putRouter}
+module.exports = {getRouter, postRouter, deleteRouter, putRouter,feedbackRouter}
