@@ -3,11 +3,13 @@ import './Feedback.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+
 export default function Feedback() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
   const navigate = useNavigate()
+
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -51,10 +53,12 @@ export default function Feedback() {
         <div className="input-group">
           <label htmlFor="feedback">Feedback:</label>
           <textarea id="feedback" style={{padding:'6px'}} value={feedback} onChange={handleFeedbackChange}></textarea>
+
         </div>
         <button className='button' type="submit">Submit</button>
       </form>
     </div>
     </div>
+
   );
 }
