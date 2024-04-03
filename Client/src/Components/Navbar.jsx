@@ -31,7 +31,6 @@ export default function Navbar() {
         <img  src={logo2} alt='logo2' />
       )}
         <input id='searchBar' type='text' placeholder='Search 🔍' style={{paddingLeft: '10px'}}/>
-        <button id='post'>Post + </button>
         <WelcomeUser/>
       </nav>
     </>)

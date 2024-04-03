@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors');
 const { startDatabase, isConnected } = require('./db/database');
 const {getRouter, postRouter, deleteRouter, putRouter,feedbackRouter} = require('./routes/opsden.route')
+const {newsGetRouter} = require('./routes/News.route')
 const app = express()
 app.use(bodyParser.json());
 app.use(cors())
@@ -12,7 +13,7 @@ app.use(postRouter)
 app.use(deleteRouter)
 app.use(putRouter)
 app.use(feedbackRouter)
-
+app.use(newsGetRouter)
 app.get('/', (req, res) => {
   res.send({message:'Welcome to the amazing world of Tech'})
 })
@@ -26,6 +27,7 @@ app.get('/ping',(req,res)=>{
 })
 
 startDatabase()
+
 .then(()=>{
   app.listen(3000,async()=>{
     console.log('Starting Server ....🚀')

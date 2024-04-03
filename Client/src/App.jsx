@@ -7,6 +7,7 @@ import Post from './Components/Post'
 import Feedback from './Components/Feedback'
 import NewsContainer from './Components/NewsContainer'
 import PopularNews from './Components/PopularNews'
+import Forum from './Components/Forum'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/feedback' element={<Feedback/>}></Route>
           <Route path='/news/:topic' element={<NewsContainer/>}></Route>
           <Route path='/popular' element={<PopularNews/>}></Route>
+          <Route path='/forum' element={<Forum/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
