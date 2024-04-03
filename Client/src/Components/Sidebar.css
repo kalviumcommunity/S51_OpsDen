@@ -16,7 +16,7 @@
     list-style-type: none;
   }
   .categories{
-    height: 48vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

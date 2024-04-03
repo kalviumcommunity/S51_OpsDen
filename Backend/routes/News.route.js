@@ -113,16 +113,16 @@ async function fetchNewsPopular() {
       console.error("Error fetching data:", err); 
     }
   }
-setInterval(fetchNewsTech, 3600000); 
-setInterval(fetchNewsPopular, 3600000); 
-setInterval(fetchNewsAI, 3600000);
-setInterval(fetchNewsBlockchain, 3600000);
-setInterval(fetchNewsGaming, 3600000);
-setInterval(fetchNewsWD, 3600000);
-setInterval(fetchNewsDSA, 3600000);
-setInterval(fetchNewsHW, 3600000);
-setInterval(fetchNewsScience, 3600000);
-setInterval(fetchNewsBusiness, 3600000);
+setInterval(fetchNewsTech, 1000001); 
+setInterval(fetchNewsPopular, 1000002); 
+setInterval(fetchNewsAI, 1000003);
+setInterval(fetchNewsBlockchain, 1000004);
+setInterval(fetchNewsGaming, 1000005);
+setInterval(fetchNewsWD, 1000006);
+setInterval(fetchNewsDSA, 1000007);
+setInterval(fetchNewsHW, 1000008);
+setInterval(fetchNewsScience, 1000009);
+setInterval(fetchNewsBusiness, 1000010);
 newsGetRouter.get('/news/tech', (req, res) => {
     if (newsDataTech) {
         res.json(newsDataTech); 

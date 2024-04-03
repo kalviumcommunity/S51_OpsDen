@@ -31,10 +31,10 @@ function Forum() {
           setState({ loading: false, error: err });
         }
       };
-      // if (state.error) {
-      //   return <div style={{ color: 'red' }}>Error: {state.error.response.data.errors
-      //   }</div>;
-      // }
+      if (state.error) {
+        return <div style={{ color: 'red' }}>Error: {state.error.response.data.errors
+        }</div>;
+      }
       if (state.loading) {
         return <div>Loading...</div>;
       }
@@ -46,8 +46,8 @@ function Forum() {
             <div>
                 <button>Post + </button>
             </div>
-            {data.articles.length >= 0 ? ( 
-              data.articles.map((item,index)=>{
+            {data.length > 0 ? ( 
+              data.map((item,index)=>{
                 return ((item.title!='[Removed]')?<div className='arc' key={index}><div style={{color:'rgb(242, 255, 0)'}}>{item.title}</div>
                 <div>{item.description}</div></div>:<></>)
               })) : (

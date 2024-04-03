@@ -10,8 +10,6 @@ export default function Sidebar() {
         <br />
         <Link to={'/Popular'}><li>Popular News</li></Link>
         <br />
-        <Link to={'/Forum'}><li>Forum</li></Link>
-        <br />
       </ul>
       <hr />
       <ul className='menu categories'>
