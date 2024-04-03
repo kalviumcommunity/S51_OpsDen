@@ -15,7 +15,14 @@
   .menu {
     list-style-type: none;
   }
-  
+  .categories{
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
   .menu li {
     cursor: pointer; 
   }

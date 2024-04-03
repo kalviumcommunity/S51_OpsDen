@@ -14,7 +14,7 @@ export default function Sidebar() {
         <br />
       </ul>
       <hr />
-      <ul className='menu'>
+      <ul className='menu categories'>
 <h1>Categories:</h1>
         <Link to={`/news/ArtifialIntelligence`} state={{'topic':'AI'}}><li>Artifial Intelligence</li></Link>
         <Link to={`/news/Blockchain`} state={{'topic':'Blockchain'}}><li>Blockchain</li></Link>
