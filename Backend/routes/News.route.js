@@ -113,7 +113,7 @@ async function fetchNewsPopular() {
       console.error("Error fetching data:", err); 
     }
   }
-setT(fetchNewsTech, 10000); 
+setInterval(fetchNewsTech, 10000); 
 setInterval(fetchNewsPopular, 20000); 
 setInterval(fetchNewsAI, 30000);
 setInterval(fetchNewsBlockchain, 40000);
