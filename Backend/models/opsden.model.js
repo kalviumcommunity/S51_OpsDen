@@ -5,7 +5,6 @@ const OpsDenSchema = new mongoose.Schema({
     name: { type: String, required: true },
     title: { type: String, required: true},
     description: { type: String, required: true},
-    content:{ type: String, required: true},
     image:{data:Buffer,contentType:String},
     publishedAt: { type: String, required: true},
     Like:{type:Number},

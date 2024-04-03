@@ -45,8 +45,8 @@ function PopularNews() {
           <div id='Article'>
             {data.articles.length > 0 ? ( 
               data.articles.map((item,index)=>{
-                return ((item.title!='[Removed]')?<div className='arc' key={index}><div><img id='newsimg' src={item.image} alt="news image" /></div> <div style={{color:'rgb(242, 255, 0)'}}>{item.title}</div>
-                <div>{item.description}</div></div>:<></>)
+                return ((item.title!='[Removed]')?<div className='arc' key={index}><div><img id='newsimg' src={item.image} alt="news image" /></div> <div id='contnt'><div style={{color:'rgb(242, 255, 0)'}}>{item.title}</div>
+                <div>{item.description}</div></div></div>:<></>)
               })) : (
               <div>No articles found.</div> 
             )}

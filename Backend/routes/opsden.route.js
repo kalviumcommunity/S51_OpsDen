@@ -13,9 +13,7 @@ const schema = Joi.object({
     name: Joi.string().required(),
     title: Joi.string().required(),
     description: Joi.string().required(),
-    content:Joi.string().required(),
     publishedAt: Joi.string().required(),
-    content: Joi.string().required(),
     Like:Joi.number(),
     comment:Joi.array()
 }) 
@@ -51,8 +49,8 @@ postRouter.post('/api/addopsden',async (req, res) => {
 
             try{
                 if (!error) {
-                let{id,name,title,description,content,image,publishedAt} = req.body;
-                const opsden = await opsdens.create({id,name,title,description,content,image,publishedAt});
+                let{id,name,title,description,publishedAt} = req.body;
+                const opsden = await opsdens.create({id,name,title,description,publishedAt});
                 res.status(201).json(opsden);}
                 else {
                     return res.status(400).send({

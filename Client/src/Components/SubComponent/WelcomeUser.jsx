@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import profile from '../../assets/profile_pic.png';
+import Avatar from 'react-avatar';
+
 function WelcomeUser() {
     const [showOptions, setShowOptions] = useState(false);
     const [displayOptions, setDisplayOptions] = useState(false);
@@ -27,12 +28,13 @@ function WelcomeUser() {
             <button id='Navbar-button' style={{visibility:displayOptions ? 'visible' : 'hidden','marginTop':'1vh' }} onClick={()=>{setCookie('logedin','False',0);window.location.reload();}}>Logout</button>
         </div>
         <h1 className='text-xl text-white'>Welcome {getCookie('user')}</h1>
-        <img  id="profile" src={profile} alt='profile_pic'  onClick={() => {
-            if (window.innerWidth < 768) {
-              toggleOptions();
-            } else if (window.innerWidth >= 768) {
-              displayOptionsToggle();
-            }}}/>
+        <Avatar name={getCookie('user')} size='75px' colors={['red', 'green', 'blue','#15A7B4','#15B415','#B41715','#B4153A','#1557B4','#15B425','#BBC809']} round={true} alt='profile_pic' onClick={() => {
+    if (window.innerWidth < 768) {
+        toggleOptions();
+    } else if (window.innerWidth >= 768) {
+        displayOptionsToggle();
+    }
+}}/>
         </div>
     )}
         }
