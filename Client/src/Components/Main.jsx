@@ -27,7 +27,7 @@ function Main() {
 
   const fetchNewsData = async () => {
     try {
-      const response = await axios.get('https://gnews.io/api/v4/search?q=tech&lang=en&sortby=publishedAt&country=in&apikey=247fa4b2364cd3a06dc29a20e750e22f');
+      const response = await axios.get('https://s51-opsden.onrender.com/news/tech');
       setData(response.data); 
       setState({ loading: false, error: null });
       console.log(response.data);

@@ -26,7 +26,7 @@ export default function Feedback() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const Id = getUniqueId()
-    axios.post('http://localhost:3000/api/feedback',{
+    axios.post('https://s51-opsden.onrender.com/api/feedback',{
       id:Id,
       name:name,
       email:email,

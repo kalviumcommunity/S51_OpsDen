@@ -16,21 +16,14 @@ export default function Sidebar() {
       <hr />
       <ul className='menu'>
 <h1>Categories:</h1>
-        <br />
         <Link to={`/news/ArtifialIntelligence`} state={{'topic':'AI'}}><li>Artifial Intelligence</li></Link>
-        <br/>
         <Link to={`/news/Blockchain`} state={{'topic':'Blockchain'}}><li>Blockchain</li></Link>
-        <br />
-        <Link to={`/news/WebDevelopment`} state={{'topic':'Web%20Development'}}><li>Web Development</li></Link>
-        <br />
-        <Link to={`/news/DataScience&Analytics`} state={{'topic':'Data%20Science&Analytics'}}><li>Data Science & Analytics</li></Link>
-        <br />
-        <Link to={`/news/HealthandWellness`} state={{'topic':'Health%20and%20Wellness'}}><li>Health and Wellness</li></Link>
-        <br />
-        <Link to={`/news/Science&Technology`} state={{'topic':'Science&Technology'}}><li>Science & Technology</li></Link>
-        <br />
-        <Link to={`/news/Business&Finance`} state={{'topic':'Business&Finance'}}><li>Business & Finance</li></Link>
-        <br />
+        <Link to={`/news/WebDevelopment`} state={{'topic':'WD'}}><li>Web Development</li></Link>
+        <Link to={`/news/DataScience&Analytics`} state={{'topic':'DSA'}}><li>Data Science & Analytics</li></Link>
+        <Link to={`/news/HealthandWellness`} state={{'topic':'HW'}}><li>Health and Wellness</li></Link>
+        <Link to={`/news/Gaming`} state={{'topic':'Gaming'}}><li>Gaming</li></Link>
+        <Link to={`/news/Science&Technology`} state={{'topic':'Science'}}><li>Science & Technology</li></Link>
+        <Link to={`/news/Business&Finance`} state={{'topic':'Business'}}><li>Business & Finance</li></Link>
       </ul>
       <hr />
       <ul className="menu menu-2">
