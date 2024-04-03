@@ -113,6 +113,7 @@ async function fetchNewsPopular() {
       console.error("Error fetching data:", err); 
     }
   }
+
 setInterval(fetchNewsTech, 10000001); 
 setInterval(fetchNewsPopular, 10000002); 
 setInterval(fetchNewsAI, 10000003);
@@ -123,6 +124,7 @@ setInterval(fetchNewsDSA, 10000007);
 setInterval(fetchNewsHW, 10000008);
 setInterval(fetchNewsScience, 10000009);
 setInterval(fetchNewsBusiness, 10000010);
+
 newsGetRouter.get('/news/tech', (req, res) => {
     if (newsDataTech) {
         res.json(newsDataTech); 
