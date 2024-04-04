@@ -118,13 +118,13 @@ let counter = 0;
 const intervalId = setInterval(() => {
   counter++;
   console.log(`Counter: ${counter}`);
-  if (counter >= 3600) {
+  if (counter >= 360) {
     fetchNewsTech(); 
   }
-  if (counter >= 3612) {
+  if (counter >= 361) {
     fetchNewsPopular(); 
   }
-  if (counter >= 3624) {
+  if (counter >= 362) {
     fetchNewsAI(); 
   }
   if (counter >= 363) {
