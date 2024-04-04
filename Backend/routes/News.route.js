@@ -113,16 +113,43 @@ async function fetchNewsPopular() {
       console.error("Error fetching data:", err); 
     }
   }
-setInterval(fetchNewsTech, 10000001); 
-setInterval(fetchNewsPopular, 10000002); 
-setInterval(fetchNewsAI, 10000003);
-setInterval(fetchNewsBlockchain, 10000004);
-setInterval(fetchNewsGaming, 10000005);
-setInterval(fetchNewsWD, 10000006);
-setInterval(fetchNewsDSA, 10000007);
-setInterval(fetchNewsHW, 10000008);
-setInterval(fetchNewsScience, 10000009);
-setInterval(fetchNewsBusiness, 10000010);
+let counter = 0; 
+
+const intervalId = setInterval(() => {
+  counter++;
+  console.log(`Counter: ${counter}`);
+  if (counter >= 3600) {
+    fetchNewsTech(); 
+  }
+  if (counter >= 3612) {
+    fetchNewsPopular(); 
+  }
+  if (counter >= 3624) {
+    fetchNewsAI(); 
+  }
+  if (counter >= 3636) {
+    fetchNewsBlockchain(); 
+  }
+  if (counter >= 3648) {
+    fetchNewsGaming(); 
+  }
+  if (counter >= 3660) {
+    fetchNewsWD(); 
+  }
+  if (counter >= 3672) {
+    fetchNewsDSA(); 
+  }
+  if (counter >= 3684) {
+    fetchNewsHW(); 
+  }
+  if (counter >= 3696) {
+    fetchNewsScience(); 
+  }
+  if (counter >= 3708) {
+    fetchNewsBusiness(); 
+    clearInterval(intervalId);
+  }
+}, 1000); // Set interval to 1 second
 newsGetRouter.get('/news/tech', (req, res) => {
     if (newsDataTech) {
         res.json(newsDataTech); 
