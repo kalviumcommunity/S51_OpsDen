@@ -149,7 +149,7 @@ const intervalId = setInterval(() => {
     fetchNewsBusiness(); 
     clearInterval(intervalId);
   }
-}, 1000); 
+}, 10000); 
 newsGetRouter.get('/news/tech', (req, res) => {
     if (newsDataTech) {
         res.json(newsDataTech); 
