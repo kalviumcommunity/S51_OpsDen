@@ -118,34 +118,34 @@ let counter = 0;
 const intervalId = setInterval(() => {
   counter++;
   console.log(`Counter: ${counter}`);
-  if (counter >= 360) {
+  if (counter >= 100) {
     fetchNewsTech(); 
   }
-  if (counter >= 361) {
+  if (counter >= 103) {
     fetchNewsPopular(); 
   }
-  if (counter >= 362) {
+  if (counter >= 106) {
     fetchNewsAI(); 
   }
-  if (counter >= 363) {
+  if (counter >= 110) {
     fetchNewsBlockchain(); 
   }
-  if (counter >= 364) {
+  if (counter >= 112) {
     fetchNewsGaming(); 
   }
-  if (counter >= 366) {
+  if (counter >= 116) {
     fetchNewsWD(); 
   }
-  if (counter >= 367) {
+  if (counter >= 119) {
     fetchNewsDSA(); 
   }
-  if (counter >= 368) {
+  if (counter >= 123) {
     fetchNewsHW(); 
   }
-  if (counter >= 369) {
+  if (counter >= 125) {
     fetchNewsScience(); 
   }
-  if (counter >= 3708) {
+  if (counter >= 130) {
     fetchNewsBusiness(); 
     clearInterval(intervalId);
   }
