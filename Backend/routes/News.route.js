@@ -127,22 +127,22 @@ const intervalId = setInterval(() => {
   if (counter >= 3624) {
     fetchNewsAI(); 
   }
-  if (counter >= 3636) {
+  if (counter >= 363) {
     fetchNewsBlockchain(); 
   }
-  if (counter >= 3648) {
+  if (counter >= 364) {
     fetchNewsGaming(); 
   }
-  if (counter >= 3660) {
+  if (counter >= 366) {
     fetchNewsWD(); 
   }
-  if (counter >= 3672) {
+  if (counter >= 367) {
     fetchNewsDSA(); 
   }
-  if (counter >= 3684) {
+  if (counter >= 368) {
     fetchNewsHW(); 
   }
-  if (counter >= 3696) {
+  if (counter >= 369) {
     fetchNewsScience(); 
   }
   if (counter >= 3708) {
